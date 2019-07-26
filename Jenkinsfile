@@ -1,14 +1,13 @@
 pipeline{
-    agent any
-    
-    stages{
-        stage('Build'){
-            when{
-                    buildingTag()
-                }
-            steps{
-                 echo "================ Hello world Building Tag"
-            }
-        }        
-    }
+	agent any
+	stages{
+		stage('Build'){
+			when{
+				buildingTag()
+			}
+			steps{
+				echo "Building hello world Tags"
+			}
+		}
+	}
 }
